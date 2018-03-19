@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel='stylesheet' href='http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.css' />
+		<link rel="stylesheet" type="text/css" href="lib/flexslider.css" />
+		<link rel='stylesheet' type='text/css' href='css/common.css' />
+		<link rel='stylesheet' type='text/css' href='css/productdetail.css' />
+	</head>
+
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					商品详情
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<!-- 底部栏 -->
+		<div class="fixbar clear">
+			<a href="javascript:;">加入购物车</a>
+			<a href="javascript:;">立即购买</a>
+		</div>
+		<div class="scroll-wrap">
+			<!-- 带缩略图的轮播图 -->
+			<div id="galleryTop" class="flexslider">
+				<ul class="slides">
+					<li><img src="http://fakeimg.pl/350x350/?text=w1&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w2&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w3&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w4&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w5&font=lobste" /></li>
+				</ul>
+			</div>
+			<div id="galleryThumbs" class="flexslider">
+				<ul class="slides">
+					<li><img src="http://fakeimg.pl/350x350/?text=w1&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w2&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w3&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w4&font=lobste" /></li>
+					<li><img src="http://fakeimg.pl/350x350/?text=w5&font=lobste" /></li>
+				</ul>
+			</div>
+
+			<!-- 产品名称及价格 -->
+			<div class="pro-info">
+				<p class="pro-name">产品名称，这里面会显示整个产品名称，但是还是建设不要太多字了，2行内最佳</p>
+				<p class="pro-price">&yen;1099.00 <span class="price-original">2999.00</span></p>
+			</div>
+			<!-- 产品属性 -->
+			<div class="pro-property2">
+				<div class="fl">
+					<span class="pro-property-key2">材质：</span>
+					<span class="pro-property-value2">18k金18k金18k金18k金18k金18k金18k金</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">重量：</span>
+					<span class="pro-property-value2">金重1.7g</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">品牌：</span>
+					<span class="pro-property-value2">KCJ</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">年份：</span>
+					<span class="pro-property-value2">2016</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">产地：</span>
+					<span class="pro-property-value2">广东</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pro-property2">
+				<div class="fl">
+					<span class="pro-property-key2">材质：</span>
+					<span class="pro-property-value2">18k金</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">重量：</span>
+					<span class="pro-property-value2">金重1.7g</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">品牌：</span>
+					<span class="pro-property-value2">KCJ</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">年份：</span>
+					<span class="pro-property-value2">2016</span>
+				</div>
+				<div class="fl">
+					<span class="pro-property-key2">产地：</span>
+					<span class="pro-property-value2">广东</span>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="pro-property" onclick="showMask()">
+				<div class="clear">
+					<span class="pro-property-key">规格：</span>
+					<span class="pro-property-value">请选择</span>
+				</div>
+			</div>
+		</div>
+		<!-- 物流设置 -->
+		<div class="pro-express">
+			<div class="clear">
+				<span class="pro-express-key">运费：</span>
+				<span class="pro-express-value">12.0元</span>
+			</div>
+			<div class="clear">
+				<span class="pro-express-key" onclick="showMask()">不支持港澳台地区配送</span>
+			</div>
+		</div>
+		<!-- 喜欢 -->
+		<div class="clear pro-likemark">
+			<a href="javascript:;"><img src="img/like/like_default.png" />喜欢</a>
+		</div>
+		<!-- 详情信息 -->
+		<div class="pro-msg">
+			<div class="msg-title-tab clear">
+				<span class="active">详细信息</span>
+				<span>客户评价</span>
+				<div class="clear"></div>
+			</div>
+			<div class="msg-content-tab clear">
+				<div class="msg-content">
+					<img src="http://img30.360buyimg.com/jgsq-productsoa/jfs/t1990/14/391467317/381809/6e9933ae/5603d37eN4701ca83.jpg" /> 潮宏基2016
+				</div>
+				<div class="msg-content" style="display: none;">
+					<!-- 客户评论 -->
+					<div class="comment-box">
+						<ul>
+							<li class="clear">
+								<div class="comment-left fl">
+									<div class="comment-avatar am-round"><img src="http://fakeimg.pl/150x150/?text=avatar&font=lobster" /></div>
+									<div class="comment-username">kcj1234</div>
+								</div>
+								<div class="comment-right">
+									<div class='star' data-number='3'></div>
+									<div class="comment-text">非常好的呀，真棒非常好的呀，真棒非常好的呀，真棒非常好的呀，真棒非常好的呀，真棒非常好的呀，真棒</div>
+									<div class="comment-info">
+										<div class="comment-product fl">笃笃哒吊坠</div>
+										<div class="comment-time fr">2016-03-04</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li class="clear">
+								<div class="comment-left fl">
+									<div class="comment-avatar am-round"><img src="http://fakeimg.pl/150x150/?text=avatar&font=lobster" /></div>
+									<div class="comment-username">kcj1234</div>
+								</div>
+								<div class="comment-right">
+									<div class='star' data-number='3'></div>
+									<div class="comment-text">非常好的呀，真棒</div>
+									<div class="comment-info">
+										<div class="comment-product fl">笃笃哒吊坠</div>
+										<div class="comment-time fr">2016-03-04</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</li>
+							<li class="clear">
+								<div class="comment-left fl">
+									<div class="comment-avatar am-round"><img src="http://fakeimg.pl/150x150/?text=avatar&font=lobster" /></div>
+									<div class="comment-username">kcj1234</div>
+								</div>
+								<div class="comment-right">
+									<div class='star' data-number='3'></div>
+									<div class="comment-text">非常好的呀，真棒</div>
+									<div class="comment-info">
+										<div class="comment-product fl">笃笃哒吊坠</div>
+										<div class="comment-time fr">2016-03-04</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- 悬浮按钮 -->
+		<div class='shop-cart'>
+			<a href=''>
+				<img src='img/btn/shop-cart.png' />
+			</a>
+			<span class="am-badge am-round">10</span>
+		</div>
+		<div class='fix-btn'>
+			<div class='go-to-top fr hide' id='gotop'>
+				<img src='img/btn/go-to-top.png' />
+			</div>
+		</div>
+		<!-- 侧边栏 -->
+		<div>
+			<div class="rightcanvas-cover"></div>
+			<div class="rightcanvas-content">
+				<div class="rightcanvas-summary">
+					<div class="img"><img src="https://img.alicdn.com/bao/uploaded/i4/1652742042/TB2LoYKkXXXXXbaXpXXXXXXXXXX_!!1652742042.jpg_100x100.jpg" /></div>
+					<div class="main">
+						<div class="price">&yen;1999.00</div>
+						<!--<div class="select">
+							已选择<span class="sv">红色</span>
+							<span>10G</span>
+						</div>-->
+					</div>
+					<div class="close" onclick="hideMask()">&times;</div>
+				</div>
+				<div class="rightcanvas-body">
+					<div id="scroller">
+						<div class="rc-sk">
+							<ul>
+								<li>
+									<h2>尺寸：</h2>
+									<div class="items">
+										<span>S</span>
+										<span>M</span>
+										<span>L</span>
+										<span>XL</span>
+									</div>
+								</li>
+								<li>
+									<h2>颜色：</h2>
+									<div class="items">
+										<span>红</span>
+										<span>绿2</span>
+										<span>蓝</span>
+										<span>黑</span>
+										<span>红</span>
+										<span>绿</span>
+									</div>
+								</li>
+								<li>
+									<h2>颜色：</h2>
+									<div class="items">
+										<span>红</span>
+										<span>绿2</span>
+										<span>蓝</span>
+										<span>黑</span>
+										<span>红</span>
+										<span>绿</span>
+									</div>
+								</li>
+								<li>
+									<h2>颜色：</h2>
+									<div class="items">
+										<span>红</span>
+										<span>绿2</span>
+										<span>蓝</span>
+										<span>黑</span>
+										<span>红</span>
+										<span>绿</span>
+									</div>
+								</li>
+								<li>
+									<h2>颜色：</h2>
+									<div class="items">
+										<span>红</span>
+										<span>绿2</span>
+										<span>蓝</span>
+										<span>黑</span>
+										<span>红</span>
+										<span>绿</span>
+									</div>
+								</li>
+								<li>
+									<h2>颜色：</h2>
+									<div class="items">
+										<span>红</span>
+										<span>绿2</span>
+										<span>蓝</span>
+										<span>黑</span>
+										<span>红</span>
+										<span>绿</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="rc-number">
+							<h2>数量：</h2>
+							<div class="number-control">
+								<div class="nc-wrapper">
+									<button type="button" class="decrease">-</button>
+									<input type="number" class="num" value="1" name="quantity">
+									<button type="button" class="increase">+</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rightcanvas-addtocart" onclick="toast('请输入toast文字请输入toast文字')">确定</div>
+			</div>
+		</div>
+
+		<div class="toast_container">
+			<div class="toast_mask_transparent"></div>
+			<div class="toast_content">
+				<p class="toast_text"></p>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="http://cdn.staticfile.org/jquery/1.11.3/jquery.min.js"></script>
+<script>
+	window.jQuery || document.write('<script src="lib/amazeui/js/jquery.min.js">\x3C/script>')
+</script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="lib/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type='text/javascript' src='lib/jquery.raty.js'></script>
+<script type="text/javascript" src="js/productdetail.js"></script>
+<script type="text/javascript">
+	//显示选择
+	function showMask() {
+		$('html body').css("overflow", "hidden");
+		$(".rightcanvas-cover").show();
+		$(".rightcanvas-content").css("top", "20%");
+	}
+	//右边关闭选择
+	function hideMask() {
+		$('html body').css("overflow", "auto");
+		$(".rightcanvas-cover").hide();
+		$(".rightcanvas-content").css("top", "120%");
+	}
+	//确定选择
+	function cofirmbtnhideMask() {
+		//先判断是否选完
+		var str = "";
+		if (($(".rc-sk ul li").length) > $(".check").length) {
+			alert("请完成剩余选择！");
+		} else {
+			for (i = 0; i < ($(".rc-sk ul li").length); i++) {
+				str = str + $(".rc-sk ul li")[i].querySelector("h2").innerText + $(".check")[i].innerText + "   ";
+			}
+			//打印到页面上
+			$(".pro-property .pro-property-value").text(str);
+			var num = $("[name=quantity]").val();
+			hideMask();
+		}
+	}
+	//选择操作添加 .check 的class
+	$(".rc-sk ul li span").on("click", function() {
+		if ($(this).hasClass("check")) {
+			$(this).removeClass("check");
+		} else {
+			$(this).addClass("check").siblings().removeClass("check");
+		}
+	});
+</script>

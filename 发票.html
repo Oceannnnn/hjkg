@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel='stylesheet' href='http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.css' />
+		<link rel='stylesheet' type='text/css' href='css/common.css' />
+		<style>
+			.invoice-hd {
+				font-size: 16px;
+				color: #555;
+			}
+			.invoice-container {
+				padding: 10px 15px;
+				border-bottom: 1px solid #ccc;
+			}
+			
+			.invoice-radio {
+				width: 100%;
+			}
+			
+			.invoice-radio label {
+				display: inline-block;
+				margin: 0;
+				padding-left: 20px;
+				background: url(img/btn/uncheck.png) no-repeat left center;
+				background-size: 15px 15px;
+			}
+			.invoice-radio label:first-child {
+				margin-right: 30%;
+			}
+			
+			.invoice-radio label.am-active {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				color: #555;
+				background-image: url(img/btn/check.png);
+			}
+			
+			.invoice-input input {
+				width: 100%;
+				padding: 6px 15px;
+				font-size: 14px;
+				background: #f2eeed;
+				border-radius: 5px;
+				outline: none;
+				border: 0;
+			}
+			.invoice-submit-btn {
+				display: block;
+				width: 75%;
+			    margin: 50px auto 0 auto;
+			    padding: 15px 0;
+			    text-align: center;
+			    color: #fff;
+			    font-size: 14px;
+			    background-color: #d45a72;
+			    -webkit-box-shadow: none;
+			    box-shadow: none;
+			    border: 0;
+			}
+			.invoice-submit-btn:focus {
+				outline: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					发票信息
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<div class="nav-bottom-bar fixbar clearfix">
+			<nav class="clearfix">
+				<a href="index.html"><span><img src="img/nav/icon_home.png" /><span>主页</span></span></a>
+				<a href="分类.html"><span><img src="img/nav/icon_class.png" /><span>分类</span></span></a>
+				<a href="cart.html"><span><img src="img/nav/icon_cart.png" /><span>购物车</span></span></a>
+				<a href="my.html"><span><img src="img/nav/icon_me.png" /><span>我的</span></span></a>
+			</nav>
+		</div>
+		<div class="scroll-wrap">
+			<form action="#" method="post">
+				<div class="invoice-container">
+					<div class="invoice-hd">
+						发票抬头
+					</div>
+					<div class="am-btn-group invoice-radio clearfix" data-am-button>
+						<label class="am-btn am-active">
+							   <input type="radio" name="invoice" value="个人" checked>个人
+							</label>
+						<label class="am-btn">
+							   <input type="radio" name="invoice" value="单位">单位
+							</label>
+					</div>
+					<div class="invoice-input">
+						<input type="text" placeholder="发票抬头" />
+					</div>
+					
+				</div>
+				<input type="submit" class="invoice-submit-btn am-round" value="确定"/>
+			</form>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>

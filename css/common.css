@@ -1,0 +1,404 @@
+/* 通用样式 */
+
+html,
+body {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 12px!important;
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	background: #f9f5f4;
+}
+
+
+/* 顶部导航样式 */
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 90;
+}
+
+header~ .scroll-wrap {
+	padding-top: 46px;
+}
+
+.fixbar~ .scroll-wrap {
+	padding-top: 46px;
+	padding-bottom: 50px;
+}
+.nav-bar2~ .scroll-wrap {
+	padding-top: 46px;
+	padding-bottom: 100px;
+}
+
+
+/*底部导航样式*/
+
+.nav-bottom-bar {
+	position: fixed;
+	z-index: 40;
+	width: 100%;
+	max-width: 640px;
+	padding: 0 5px;
+	bottom: 0;
+	background: #e4e4e4;
+	border-top: 1px solid #ccc;
+}
+
+.nav-bottom-bar a {
+	float: left;
+	width: 20%;
+	text-align: center;
+	color: #999;
+}
+
+.nav-bottom-bar a.current {
+	color: #d25a73;
+}
+
+.nav-bottom-bar a span {
+	display: block;
+}
+
+.nav-bottom-bar a img {
+	width: 23px;
+	max-width: 46px;
+	margin-top: 7px;
+}
+
+.headerbox {
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	background-color: #e4e4e4;
+	z-index: 3;
+}
+
+.headerbox .title {
+	height: 45px;
+	font: normal 16px/45px arial;
+	color: #cc9e72;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.headerbox .title img {
+	max-height: 20px;
+}
+
+.btn-topbar-left,
+.btn-topbar-right {
+	position: absolute;
+	width: 40px;
+	height: 45px;
+	top: 0;
+}
+
+.btn-topbar-left a,
+.btn-topbar-right a {
+	width: 100%;
+	height: 100%;
+}
+
+.btn-topbar-right {
+	width: 40px;
+}
+
+.btn-topbar-left img,
+.btn-topbar-right img {
+	width: 100%;
+	margin-top: 10px;
+	max-width: 25px;
+}
+
+.btn-topbar-left {
+	left: 0;
+}
+
+.btn-topbar-left img {
+	margin-left: 10px;
+}
+
+.btn-topbar-right {
+	right: 0;
+}
+
+
+/* 下拉菜单 */
+
+.nav-menu {
+	position: fixed;
+	top: -50px;
+	width: 100%;
+	max-width: 640px;
+	height: 50px;
+	border-bottom: 1px solid #ccc;
+	-webkit-transition: top 500ms ease-in-out;
+	-moz-transition: top 500ms ease-in-out;
+	transition: top 500ms ease-in-out;
+	z-index: 20;
+}
+
+.nav-menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background: #e4e4e4;
+	height: 100%;
+}
+
+.nav-menu ul li {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 25%;
+	height: 100%;
+}
+
+.nav-menu ul li a i {
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin: 5px auto;
+	color: #999;
+}
+
+.nav-menu ul li a span {
+	display: block;
+	text-align: center;
+	font-size: 10px;
+	color: #999;
+	text-decoration: none;
+}
+
+
+/* 功能样式 */
+
+.db {
+	display: block;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear:before,
+.clear:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden
+}
+
+.hide {
+	display: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* 表单样式去除 */
+
+.am-form-error .am-form-field:focus,
+.am-field-error:focus,
+.am-form-error .am-form-field,
+.am-field-error,
+.am-form-success .am-form-field,
+.am-field-valid {
+	background: transparent !important;
+	border-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+
+/* 空白提示 */
+
+.list-empty {
+	padding-top: 130px;
+	text-align: center;
+}
+
+.list-empty p {
+	font-size: 14px!important;
+	color: #777;
+	margin: 0;
+}
+
+.list-empty a {
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	height: 35px;
+	padding: 0 15px;
+	display: inline-block;
+	appearance: none;
+	cursor: pointer;
+	border: none;
+	transition-property: all;
+	transition-duration: .3s;
+	font-size: 12px!important;
+	background: #d45a72;
+	color: #fff;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 24px;
+}
+
+.lazy {
+	background: url(../img/loading.gif) no-repeat center center;
+}
+
+.fix-btn {
+	position: fixed;
+	bottom: 100px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	box-sizing: border-box;
+	z-index: 9;
+}
+
+.shop-cart,
+.go-to-top {
+	width: 40px;
+	height: 40px;
+	z-index: 9;
+}
+
+
+/* toast */
+
+.toast_container {
+	display: none;
+}
+
+.toast_mask_transparent {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0
+}
+
+.toast_content {
+	position: fixed;
+	z-index: 999;
+	width: 8em;
+	top: 180px;
+	left: 50%;
+	margin-left: -4em;
+	background: rgba(40, 40, 40, .75);
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.toast_text {
+	margin: 1em 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.price-original {
+	font-size: 12px;
+	color: #888;
+	text-decoration: line-through;
+	margin-left: .8em;
+}
+
+select.beauty {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: medium;
+	opacity: 0;
+}
+
+.skin-l {
+	position: absolute;
+	top: -3px;
+	left: 16px;
+	display: inline-block;
+	width: calc(100% - 26px);
+	height: 26px;
+	line-height: 26px;
+	background: #fff;
+	border-top-left-radius: 999px;
+	border-bottom-left-radius: 999px;
+	text-indent: 10px;
+	color: #555;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-shadow: 1px 1px 1px rgba(1, 0, 0, .15);
+	-moz-box-shadow: 1px 1px 1px rgba(1, 0, 0, .15);
+	box-shadow: 1px 1px 1px rgba(1, 0, 0, .15);
+}
+
+.skin-r {
+	position: absolute;
+	top: -3px;
+	right: 0;
+	width: 26px;
+	height: 26px;
+	background: #d45a72 url(../img/btn/btn_arrow_right.png) no-repeat;
+	background-position: center center;
+	border-top-right-radius: 999px;
+	border-bottom-right-radius: 999px;
+	-webkit-box-shadow: 1px 1px 1px rgba(1, 0, 0, .15);
+	-moz-box-shadow: 1px 1px 1px rgba(1, 0, 0, .15);
+	box-shadow: 1px 1px 1px rgba(1, 0, 0, .15);
+}
+
+.am-form-error .am-form-field:focus,
+.am-field-error:focus,
+.am-form-error .am-form-field,
+.am-field-error,
+.am-form-success .am-form-field,
+.am-field-valid {
+	background: transparent !important;
+	border-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}

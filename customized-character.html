@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel='stylesheet' href='http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.css' />
+		<link rel='stylesheet' type='text/css' href='css/common.css' />
+		<style>
+			.cust-char-container{background:#fcfcfc}.cust-flow-btn,.cust-flow-btn:hover,.cust-flow-btn:focus,.cust-flow-btn:active{color:#cc9e7c}.cust-char-item{padding:10px 15px;border-bottom:1px solid #e4e4e4}.cust-char-item:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cust-char-hd{color:#555;font-size:16px}.cust-char-bd{margin:8px 0}.cust-char-notes{color:#888;font-size:12px}.cust-char-commit{padding:1em;color:#fff;background:#ec728b}.cust-input{background:#f2eeed;-webkit-appearance:none;appearance:none;-webkit-box-shadow:none;box-shadow:none;outline:none;border:0;font-size:16px;color:#555;padding:10px 15px;border-radius:5px}.cust-input-large{width:60%}.cust-input-small{width:20%}.cust-textarea{width:100%;min-height:110px;resize:none}.cust-char-booking{width:28%;color:#d75d76;border:0;-webkit-box-shadow:none;box-shadow:none;outline:none;border-bottom:1px solid #555;background:transparent;text-align:center}.cust-char-unit{font-size:16px;margin-left:5px}.cust-size-bd{font-size:0}.cust-char-uhd{display:inline-block;width:30%;font-size:16px}.cust-char-uhd input{text-align:center;width:60%}.am-btn-group label.am-btn{display:inline-block;width:90px;background:#f2eeed;color:#555;-webkit-box-shadow:none;box-shadow:none;border-radius:5px!important;text-align:center;margin-right:5px;margin-bottom:5px}.am-btn-group label.am-active{background:#d75d75;color:#fff;-webkit-box-shadow:none;box-shadow:none}.cust-flow-container{position:absolute;z-index:9;top:0;bottom:0;left:0;right:0;display:none}.cust-flow-container img{margin-top:90px;width:100%}.am-btn-group .am-btn{padding:5px;font-size:12px}.cust-char-technology .am-btn{padding:10px}.am-btn-group .am-btn i{display:block;margin:6px auto;background-repeat:no-repeat;background-position:0 100%;background-size:100%}.am-btn-group .am-btn.am-active i{background-position:0 0}.cust-char-font label,.cust-char-color label{width:90px;height:90px}.cust-char-font .am-btn i{width:80px;height:40px;margin:10px auto}.cust-char-color .am-btn i{margin:0 auto 3px;width:60px;height:60px}.xiaoo i{background-image:url(img/customized/xiaoo.png)}.dao i{background-image:url(img/customized/dao.png)}.cust-char-peilian .am-btn i{width:80px;height:52px;margin-top:-6px;margin-bottom:10px;background-position:0 100%}.cust-char-select{position:relative;width:120px;max-width:80%;height:20px}.cust-char-select select{position:absolute;z-index:3;width:130px;opacity:0}.skin-l{left:2px;text-align:center}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					字母链定制
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<div class="nav-bottom-bar fixbar clearfix">
+			<nav class="clearfix">
+				<a href="index.html"><span><img src="img/nav/icon_home_0.png" /><span>主页</span></span></a>
+				<a href="分类.html"><span><img src="img/nav/icon_class.png" /><span>分类</span></span></a>
+				<a href="cart.html"><span><img src="img/nav/icon_cart.png" /><span>购物车</span></span></a>
+				<a href="my.html"><span><img src="img/nav/icon_me.png" /><span>我的</span></span></a>
+			</nav>
+		</div>
+		<div class="scroll-wrap">
+			<form action="#" method="post">
+				<div class="cust-char-container">
+					<!-- 定制字母 -->
+					<div class="cust-char-item clearfix">
+						<div class="cust-char-hd">定制字母：
+							<a href="javascript:;"  onclick="$('.cust-flow-container').show()" class="am-fr cust-flow-btn">定制流程<span>?</span></a>
+						</div>
+						<div class="cust-char-bd">
+							<input type="text" oninput="this.value=this.value.replace(/[^\a-zA-Z]/g,'')" class="cust-input cust-input-large" maxlength="20" required />
+						</div>
+						<div class="cust-char-notes">
+							（注：20个字符以内，字母或数字，注意区分大小写，必填）
+						</div>
+					</div>
+
+					<!-- 单选组件(默认选中第一个)：字体+颜色+工艺 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">选择字体：</div>
+						<div class="cust-char-bd cust-char-font">
+							<div class="am-btn-group cust-char-font" data-am-button>
+								<!--默认选中状态设置-->
+								<label class="am-btn  am-active">
+								    <input type="radio" class="needsclick" name="font" value="潦草" checked><i style="background-image: url(img/customized/font.png);"></i><span>潦草</span>
+								  </label>
+								<label class="am-btn ">
+								    <input type="radio" class="needsclick" name="font" value="常规"><i style="background-image: url(img/customized/font.png);"></i><span>常规</span>
+								  </label>
+								<label class="am-btn ">
+								    <input type="radio" class="needsclick" name="font" value="意大利"><i style="background-image: url(img/customized/font.png);"></i><span>意大利</span>
+								  </label>
+							</div>
+						</div>
+						<div class="cust-char-hd">K金颜色：</div>
+						<div class="cust-char-bd cust-char-color">
+							<div class="am-btn-group" data-am-button>
+								<label class="am-btn  am-active">
+								    <input type="radio" class="needsclick" name="color" value="18K金白色" checked><i style="background-image: url(img/customized/color.png);"></i><span>18K金白色</span>
+								  </label>
+								<label class="am-btn ">
+								    <input type="radio" class="needsclick" name="color" value="18K金黄色"><i style="background-image: url(img/customized/color.png);"></i><span>18K金黄色</span>
+								  </label>
+								<label class="am-btn ">
+								    <input type="radio" class="needsclick" name="color" value="18K金红色"><i style="background-image: url(img/customized/color.png);"></i><span>18K金红色</span>
+								  </label>
+							</div>
+						</div>
+						<div class="cust-char-hd">表面工艺：</div>
+						<div class="cust-char-bd">
+							<div class="am-btn-group cust-char-technology" data-am-button>
+								<label class="am-btn  am-active">
+								    <input type="radio" class="needsclick" name="technology" value="光面不镶" checked> 光面不镶
+								  </label>
+								<label class="am-btn ">
+								    <input type="radio" class="needsclick" name="technology" value="钻石镶嵌">钻石镶嵌
+								  </label>
+							</div>
+						</div>
+					</div>
+
+					<!-- 单选组件：配链 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">配链:</div>
+						<div class="cust-char-bd">
+							<div class="am-btn-group cust-char-peilian" id="peilian" data-am-button>
+								<label class="am-btn  am-active xiaoo">
+								    <input type="radio" class="needsclick" name="type" value="小o字链" checked><i></i><span>小o字链</span> 
+								  </label>
+								<label class="am-btn dao">
+								    <input type="radio" class="needsclick" name="type" value="大o字链"><i></i><span>大o字链</span>
+								  </label>
+							</div>
+						</div>
+						<div class="cust-char-hd">配链长度：<input type="tel" class="cust-input cust-input-small" required /><span class="cust-char-unit">cm</span></div>
+						<div class="cust-char-notes">
+							（注：配链长度普遍是40、42、44CM，或根据切实需求填写，必填）
+						</div>
+					</div>
+
+					<!-- 星座图案 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">如需增加星座图标:</div>
+						<div class="cust-char-bd cust-char-select">
+							<select class="" name="" onchange="$('.skin-l').text(this.value)" required>
+								<option value="白羊座">白羊座</option>
+								<option value="金牛座">金牛座</option>
+								<option value="双子座">双子座</option>
+								<option value="处女座">处女座</option>
+							</select>
+							<div class="skin-l">请选择</div>
+							<div class="skin-r"></div>
+						</div>
+						<div class="cust-char-notes">
+							（注：可让设计师帮忙添加提高整体美感，选填）
+						</div>
+					</div>
+
+					<!-- 刻字要求 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">刻字要求：</div>
+						<div class="cust-char-bd">
+							<input type="text" class="cust-input" maxlength="20"/>
+						</div>
+						<div class="cust-char-notes">
+							（注：在字母链后面刻字，20个字符以内）
+						</div>
+					</div>
+
+					<!-- 规格要求 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">规格要求:</div>
+						<div class="cust-char-bd cust-size-bd">
+							<span class="cust-char-uhd">长：<input type="tel" class="cust-input cust-input-small" /></span>
+							<span class="cust-char-uhd">宽：<input type="tel" class="cust-input cust-input-small" /></span>
+							<span class="cust-char-uhd">高：<input type="tel" class="cust-input cust-input-small" /></span>
+							<span class="cust-char-unit">cm</span>
+						</div>
+						<div class="cust-char-notes">
+							（注：字母链的长、宽、高要求，不填写表示由设计师根据设计而定 ）
+						</div>
+					</div>
+
+					<!-- 预计定金 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">预付定金：</div>
+						<div class="cust-char-bd">
+							&yen;：<input type="tel" class="cust-char-booking" value="500" />
+						</div>
+					</div>
+
+					<!-- 其他要求 -->
+					<div class="cust-char-item">
+						<div class="cust-char-hd">其他要求：</div>
+						<div class="cust-char-bd">
+							<textarea name="other" class="cust-input cust-textarea" maxlength="200"></textarea>
+						</div>
+						<div class="cust-char-notes">
+							（注：200字以内）
+						</div>
+					</div>
+				</div>
+				<input type="submit" value="确认" class="cust-char-commit am-btn am-btn-block" />
+			</form>
+			<div class="cust-flow-container" onclick="$('.cust-flow-container').hide()">
+				<img src="img/customized/flowchart.png" />
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>

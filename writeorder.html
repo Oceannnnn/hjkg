@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<meta name="format-detection" content="telephone=no" />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel='stylesheet' href='lib/amazeui/css/amazeui.css' />
+		<link rel='stylesheet' type='text/css' href='css/common.css' />
+		<link rel='stylesheet' type='text/css' href='css/writeorder.css' />
+	</head>
+
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					填写订单
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<div class="nav-bottom-bar fixbar clearfix">
+			<nav class="clearfix">
+				<a href="index.html"><span><img src="img/nav/icon_home_0.png" /><span>主页</span></span></a>
+				<a href="分类.html"><span><img src="img/nav/icon_class.png" /><span>分类</span></span></a>
+				<a href="cart.html"><span><img src="img/nav/icon_cart.png" /><span>购物车</span></span></a>
+				<a href="my.html"><span><img src="img/nav/icon_me.png" /><span>我的</span></span></a>
+			</nav>
+		</div>
+		<div class="scroll-wrap">
+			<!-- 可以选择 快递 或者 门店自提 2016-12-01 11:27:20 -->
+			<div class="address-wrapper">
+				<!-- 选择快递 -->
+				<div class="address-container">
+					<!-- 1.空地址 -->
+					<div class="address-kong">请填写收货地址</div>
+				</div>
+				<div class="address-container">
+					<!-- 2.有地址 -->
+					<div class="address-content">
+						<input id="r1" type="radio" name="add-radio" />
+						<label for="r1" class="add-label fl"></label>
+						<div class="add-fr">
+							<span class="address-user">李大佬</span>
+							<span class="address-phone">13820123678</span>
+							<div class="address-text">广东省广州市番禺区大石镇黄村街23号5楼1室</div>
+						</div>
+					</div>
+				</div>
+				<!-- 选择门店自提 -->
+				<div class="address-container">
+					<div class="address-content">
+						<input id="r2" type="radio" name="add-radio" />
+						<label for="r2" class="add-label fl"></label>
+						<div class="add-fr">
+							<div class="md-hd fl">门店自提：</div>
+							<div class="md-bd">广州王府井百货店</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="address-quan">
+				<div class="adquan-container">
+					<div class="adquan-default">
+						<!-- 初始，如选择优惠券后隐藏 -->
+						请选择优惠券（2张可用优惠券）（无可用优惠券）
+					</div>
+					满2000减100优惠券
+				</div>
+			</div>
+			<div class="dipunumber">
+				<div class="dp-hd fl">请输入店铺营销号：</div>
+				<div class="dp-bd">
+					<input type="text" autofocus />
+				</div>
+			</div>
+			<div class="dipunumber">
+				<div class="dp-hd fl">请输入需使用的积分：</div>
+				<div class="dp-bd">
+					<input type="text" placeholder="共100积分可用" />
+				</div>
+			</div>
+			<!-- 产品系列 -->
+			<div class="pro-list">
+				<ul>
+					<li class="clearfix">
+						<div class="pro-container clearfix">
+							<div class="pro-img fl">
+								<a href=""><img src="http://fakeimg.pl/100x100/?text=product&font=lobster" /></a>
+							</div>
+							<div class="pro-info">
+								<div class="pro-name">
+									<a href="">商品名称，Cipullo，脉动回来，Cipullo，脉动回来啊！2016年新款破洞九分补商品名称，Cipullo，脉动回来，Cipullo，脉动回来啊！2016年新款破洞九分补</a>
+								</div>
+								<div class="pro-size">规格：<span>黄色 165g</span></div>
+								<div class="pro-param">
+									<span class="pro-price fl">&yen;1099.00</span>
+									<div class="pro-number fr">&times;1</div>
+								</div>
+							</div>
+						</div>
+						<div class="pro-opts clearfix">
+							<div class="pro-opts-hd pro-hd fl">购买数量：</div>
+							<div class="pro-opts-bd fr">
+								<span onclick="alert('-')" class="pro-opts-btn pro-opts-minus"></span>
+								<input type="tel" value="1" class="pro-opts-input" />
+								<span onclick="alert('+')" class="pro-opts-btn pro-opts-add"></span>
+							</div>
+						</div>
+					</li>
+					<!--<li class="clearfix">
+						<div class="pro-container clearfix">
+							<div class="pro-img fl">
+								<a href=""><img src="http://fakeimg.pl/100x100/?text=product&font=lobster" /></a>
+							</div>
+							<div class="pro-info">
+								<div class="pro-name">
+									<a href="">商品名称，Cipullo，脉动回来，Cipullo，脉动回来啊！2016年新款破洞九分补商品名称，Cipullo，脉动回来，Cipullo，脉动回来啊！2016年新款破洞九分补</a>
+								</div>
+								<div class="pro-size">规格：<span>黄色 165g</span></div>
+								<div class="pro-param">
+									<span class="pro-price fl">&yen;1099.00</span>
+									<div class="pro-number fr">&times;1</div>
+								</div>
+							</div>
+						</div>
+						<div class="pro-opts clearfix">
+							<div class="pro-opts-hd pro-hd fl">购买数量：</div>
+							<div class="pro-opts-bd fr">
+								<span onclick="alert('-')" class="pro-opts-btn pro-opts-minus"></span>
+								<input type="tel" value="1" class="pro-opts-input" />
+								<span onclick="alert('+')" class="pro-opts-btn pro-opts-add"></span>
+							</div>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+			<!-- 产品列表结束 -->
+			
+			<div class="pro-delivery-container">
+				<div class="pro-delivery-content clearfix">
+					<div class="pro-hd fl">配送方式：</div>
+					<div class="pro-delivery-bd am-text-truncate fr">超长处理超长处理超长处理超长处理超长处理超长处理</div>
+					<select name="delivery" onchange="$('.pro-delivery-bd').text(this.options[this.selectedIndex].text)">
+						<option value="1">免邮</option>
+						<option value="2">顺丰</option>
+						<option value="3">水路水路水路水路水路水路水路水路水路水路水路水路水路水路水路水路水路水路水路</option>
+					</select>
+				</div>
+			</div>
+			
+			<div class="pro-invoice-container">
+				<div class="pro-invoice-content clearfix">
+					<div class="pro-hd fl">发票信息：</div>
+					<div class="pro-invoice-bd am-text-truncate fr">广东省广州市越秀区建设六马路29号荣建大厦</div>
+				</div>
+			</div>
+			
+			<div class="pro-comment-container">
+				<div class="pro-comment-content clearfix">
+					<div class="pro-hd fl">买家留言：</div>
+					<div class="pro-comment-bd">
+						<textarea name=""></textarea>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 底部确认 -->
+			<div class="address-buttom">
+				<span class="fl">实付：<span class="address-total-price">&yen;3099.00 (含运费)</span></span>
+				<span class="address-comfirm-btn fr">确认订单</span>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>

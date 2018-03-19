@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<meta name="format-detection" content="telephone=no" />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel='stylesheet' href='http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.css' />
+		<link rel='stylesheet' type='text/css' href='css/common.css' />
+		<style>
+			.cust-dia-container {
+				background: #fcfcfc;
+			}
+			
+			.dia-select-container {
+				padding: 10px 0 45px;
+			}
+			
+			.dia-select-tab {
+				border-bottom: 1px solid #e4e4e4;
+			}
+			
+			.dia-select-tab ul {
+				margin: 0;
+				padding: 0;
+			}
+			
+			.dia-select-tab ul li {
+				float: left;
+				list-style: none;
+				width: 25%;
+				text-align: center;
+				padding: 10px 0 8px;
+			}
+			
+			.dia-select-tab ul li a {
+				display: block;
+				border-right: 1px solid #a5a5a3;
+				color: #555;
+			}
+			
+			.dia-select-tab ul li:last-child a {
+				border-right: 0;
+			}
+			
+			.dia-select-tab ul li span {
+				position: relative;
+				-webkit-user-select: none;
+				user-select: none;
+			}
+			
+			.dia-select-tab ul li span:before,
+			.dia-select-tab ul li span:after {
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				border-style: solid;
+			}
+			
+			.dia-select-tab ul li span:before {
+				left: 110%;
+				bottom: 55%;
+				border-width: 0 3px 4px 3px;
+				border-color: transparent transparent #555 transparent;
+			}
+			
+			.dia-arrow:before {
+				display: none;
+			}
+			
+			.dia-select-tab ul li span:after {
+				left: 110%;
+				top: 50%;
+				border-width: 4px 3px 0 3px;
+				border-color: #555 transparent transparent transparent;
+			}
+			
+			.dia-arrow:after {
+				top: 25% !important;
+			}
+			
+			.dia-arrow.active {
+				color: #d45a71;
+			}
+			
+			.dia-arrow.active:after {
+				border-color: #d45a71 transparent transparent transparent;
+			}
+			
+			.am-btn-group {
+				width: 100%;
+			}
+			
+			.am-btn-group label.am-btn {
+				background: #f2eeed;
+				color: #555;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				border-radius: 5px!important;
+				text-align: center;
+				margin-right: 5px;
+				margin-bottom: 5px
+			}
+			
+			.am-btn-group label.am-active {
+				background: #d75d75;
+				color: #fff;
+				-webkit-box-shadow: none;
+				box-shadow: none
+			}
+			
+			.dia-select-10 label.am-btn {
+				padding: 8px 0;
+				text-align: center;
+				width: calc(10% - 5px);
+			}
+			
+			.dia-select-20 label.am-btn {
+				padding: 8px 0;
+				text-align: center;
+				width: calc(20% - 5px);
+			}
+			
+			.dia-select-25 label.am-btn {
+				width: calc(25% - 5px);
+			}
+			
+			.dia-select-item {
+				padding: 10px 15px;
+				border-bottom: 1px solid #e4e4e4;
+			}
+			
+			.dia-select-hd {
+				color: #555;
+				font-size: 16px;
+			}
+			
+			.dia-select-bd {
+				margin: 8px 0;
+			}
+			
+			.dia-input {
+				width: 40%;
+				background: #f2eeed;
+				-webkit-appearance: none;
+				appearance: none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				outline: none;
+				border: 0;
+				font-size: 14px;
+				color: #555;
+				padding: 6px 15px;
+				border-radius: 5px;
+				text-align: center;
+			}
+			
+			.dia-input-line {
+				padding: 10px 15px;
+			}
+			
+			.dia-fixed-container {
+				position: fixed;
+				z-index: 3;
+				width: 100%;
+				left: 0;
+				bottom: 50px;
+				border-top: 1px solid #ccc;
+			}
+			
+			.dia-select-close {
+				width: 45px;
+				height: 45px;
+				background: #f9f5f4 url(img/btn/x.png) no-repeat center center;
+				background-size: 50%;
+			}
+			
+			.dia-fixed-btn {
+				margin-left: 45px;
+			}
+			
+			.dia-fixed-btn div {
+				width: 50%;
+				text-align: center;
+				color: #fff;
+				font-size: 16px;
+				line-height: 45px;
+				-webkit-user-select: none;
+				user-select: none;
+			}
+			
+			.dia-fixed-btn1 {
+				background: #555;
+			}
+			
+			.dia-fixed-btn2 {
+				background: #ec728b;
+			}
+			
+			.dia-number {
+				margin: 5px 0;
+			}
+			
+			#dia-number .dia-select-bd {
+				margin: 0;
+			}
+			
+			#dia-number label {
+				display: inline-block;
+				margin: 0 20px 0 0;
+				background: url(img/btn/uncheck.png) no-repeat left center;
+				background-size: 15px 15px;
+			}
+			
+			#dia-number label.am-active {
+				color: #555;
+				background-image: url(img/btn/check.png);
+			}
+			/* 产品列表样式 */
+			
+			.dia-pro-container ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.dia-pro-container ul li {
+				margin-bottom: 10px;
+				background-color: #f2eeed;
+			}
+			
+			.dia-item-msg,
+			.dia-item-opts div {
+				float: left;
+				width: 33.33%;
+			}
+			
+			.dia-item-msg:last-child {
+				width: 66.66%;
+			}
+			
+			.dia-item-info {
+				padding: 10px 15px;
+				border-bottom: 1px solid #cecece;
+			}
+			
+			.dia-item-opts {
+				padding: 8px 0 5px;
+			}
+			
+			.dia-item-opts div {
+				text-align: center;
+				color: #cb9e7d;
+				line-height: 20px;
+				-webkit-user-select: none;
+				user-select: none;
+			}
+			
+			.dia-item-opts a {
+				color: #cb9e7d;
+			}
+			
+			.dia-item-report i {
+				background: url(img/btn/icon_certificate.png) no-repeat center center;
+			}
+			
+			.dia-item-cart i {
+				background: url(img/btn/icon_buy.png) no-repeat center center;
+			}
+			
+			.dia-item-opts i {
+				display: inline-block;
+				margin-bottom: -5px;
+				margin-right: 5px;
+				width: 18px;
+				height: 18px;
+				background-size: cover
+			}
+			
+			.dia-item-report {
+				border-left: 1px solid #cecece;
+				border-right: 1px solid #cecece;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					裸钻定制
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<div class="nav-bottom-bar fixbar clearfix">
+			<nav class="clearfix">
+				<a href="index.html"><span><img src="img/nav/icon_home.png" /><span>主页</span></span>
+				</a>
+				<a href="分类.html"><span><img src="img/nav/icon_class.png" /><span>分类</span></span>
+				</a>
+				<a href="cart.html"><span><img src="img/nav/icon_cart.png" /><span>购物车</span></span>
+				</a>
+				<a href="my.html"><span><img src="img/nav/icon_me.png" /><span>我的</span></span>
+				</a>
+			</nav>
+		</div>
+		<div class="scroll-wrap cust-dia-container clearfix">
+			<!-- 头部筛选 -->
+			<div class="dia-select-tab">
+				<ul class="clearfix">
+					<li>
+						<a href="#">货号</a>
+					</li>
+					<li>
+						<a href="#"><span class="dia-tw">重量</span></a>
+					</li>
+					<li>
+						<a href="#"><span class="dia-tw">价钱</span></a>
+					</li>
+					<li>
+						<a href="javascript:showSelect()"><span class="dia-arrow">筛选</span></a>
+					</li>
+				</ul>
+			</div>
+			<!-- 筛选内容 -->
+			<div class="dia-select-container" style="display: none;">
+				<!--现货重量价钱-->
+				<form action="#" id="dia-form" method="post">
+					<div class="dia-select-item">
+						<div class="am-btn-group dia-select-hd" data-am-button>
+							<label class="am-btn">
+						    <input type="checkbox" name="" value="现货">现货
+						  </label>
+						</div>
+						<div class="dia-select-hd">重量：</div>
+						<div class="dia-select-bd dia-number">
+							<input type="tel" class="dia-input" /><span class="dia-input-line">—</span><input type="tel" class="dia-input" />
+						</div>
+						<div class="dia-select-hd">价钱：</div>
+						<div class="dia-select-bd dia-number">
+							<input type="tel" class="dia-input" /><span class="dia-input-line">—</span><input type="tel" class="dia-input" />
+						</div>
+					</div>
+					<!--证书号货号-->
+					<div class="dia-select-item" id="dia-number">
+						<div class="am-btn-group dia-select-bd" data-am-button>
+							<label class="am-btn">
+						   <input type="radio" name="number" value="证书号">证书号
+						</label>
+							<label class="am-btn">
+						   <input type="radio" name="number" value="货号">货号
+						</label>
+						</div>
+						<div class="dia-select-bd dia-number">
+							<input type="tel" class="dia-input" />
+						</div>
+					</div>
+					<!--形状颜色净度 -->
+					<div class="dia-select-item">
+						<div class="dia-select-hd">形状：</div>
+						<div class="dia-select-bd am-btn-group dia-select-20" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="圆形">圆形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="梨形">梨形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="心形">心形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="雷迪恩">雷迪恩
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="垫形">垫形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="祖母绿">祖母绿
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="A形">A形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="B形">B形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="以形">以形
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="carat" value="其他">其他
+						</label>
+						</div>
+						<div class="dia-select-hd">颜色：</div>
+						<div class="dia-select-bd am-btn-group dia-select-20" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="D">D
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="E">E
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="F">F
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="G">G
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="H">H
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="I">I
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="J">J
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="K">K
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="L">L
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="M">M
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="color" value="N">N
+						</label>
+						</div>
+						<div class="dia-select-hd">净度：</div>
+						<div class="dia-select-bd am-btn-group dia-select-20" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="FL">FL
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="IF">IF
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="VVS1">VVS1
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="VVS2">VVS2
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="VS1">VS1
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="VS2">VS2
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="SI1">SI1
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="clarity" value="SI2">SI2
+						</label>
+						</div>
+						<div class="dia-select-hd">切工：</div>
+						<div class="dia-select-bd am-btn-group  dia-select-20" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="cut" value="EX">EX
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="cut" value="VG">VG
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="cut" value="GD">GD
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="cut" value="FR">FR
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="cut" value="NN">NN
+						</label>
+						</div>
+						<div class="dia-select-hd">抛光：</div>
+						<div class="dia-select-bd am-btn-group  dia-select-25" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="polish" value="EX">EX
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="polish" value="VG">VG
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="polish" value="GD">GD
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="polish" value="FR">FR
+						</label>
+						</div>
+						<div class="dia-select-hd">对称：</div>
+						<div class="dia-select-bd am-btn-group  dia-select-25" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="symmetry" value="EX">EX
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="symmetry" value="VG">VG
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="symmetry" value="GD">GD
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="symmetry" value="FR">FR
+						</label>
+						</div>
+						<div class="dia-select-hd">证书：</div>
+						<div class="dia-select-bd am-btn-group  dia-select-25" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="report" value="GIA">GIA
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="report" value="国检">国检
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="report" value="IGI">IGI
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="report" value="HRD">HRD
+						</label>
+						</div>
+						<div class="dia-select-hd">荧光：</div>
+						<div class="dia-select-bd am-btn-group  dia-select-20" data-am-button>
+							<label class="am-btn">
+						   <input type="checkbox" name="fluorescence" value="N">N
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="fluorescence" value="F">F
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="fluorescence" value="M">M
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="fluorescence" value="S">S
+						</label>
+							<label class="am-btn">
+						   <input type="checkbox" name="fluorescence" value="VS">VS
+						</label>
+						</div>
+					</div>
+					<!-- 重置 搜索按钮 -->
+					<div class="dia-fixed-container clearfix">
+						<div class="dia-select-close fl" onclick="showSelect()"></div>
+						<div class="dia-fixed-btn">
+							<div class="dia-fixed-btn1 fl" onclick="reset()">重置</div>
+							<div class="dia-fixed-btn2 fl">搜索</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- 筛选结束 -->
+			<!-- 产品列表 -->
+			<div class="dia-pro-container">
+				<ul>
+					<li>
+						<!-- 产品信息 -->
+						<div class="dia-item-info clearfix">
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">货号：</span><span class="dia-item-bd">12341234</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">形状：</span><span class="dia-item-bd">圆形</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">重量：</span><span class="dia-item-bd">16.2</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">证书：</span><span class="dia-item-bd">CIA</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">颜色：</span><span class="dia-item-bd">--</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">净度：</span><span class="dia-item-bd">EX</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">切工：</span><span class="dia-item-bd">VG</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">抛光：</span><span class="dia-item-bd">EX</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">对称：</span><span class="dia-item-bd">PL</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">荧光：</span><span class="dia-item-bd">S</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">直径：</span><span class="dia-item-bd">23.36&times;14.64&times;7.19</span>
+							</div>
+						</div>
+						<!-- 产品操作区 -->
+						<div class="dia-item-opts clearfix">
+							<div class="dia-item-price">&yen; 1099.00</div>
+							<div class="dia-item-report">
+								<a href="#"><i></i>查看证书</a>
+							</div>
+							<div class="dia-item-cart">
+								<a href="#"><i></i>购买</a>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<!-- 产品信息 -->
+						<div class="dia-item-info clearfix">
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">货号：</span><span class="dia-item-bd">12341234</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">形状：</span><span class="dia-item-bd">圆形</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">重量：</span><span class="dia-item-bd">16.2</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">证书：</span><span class="dia-item-bd">CIA</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">颜色：</span><span class="dia-item-bd">--</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">净度：</span><span class="dia-item-bd">EX</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">切工：</span><span class="dia-item-bd">VG</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">抛光：</span><span class="dia-item-bd">EX</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">对称：</span><span class="dia-item-bd">PL</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">荧光：</span><span class="dia-item-bd">S</span>
+							</div>
+							<div class="dia-item-msg">
+								<span class="dia-item-hd">直径：</span><span class="dia-item-bd">23.36&times;14.64&times;7.19</span>
+							</div>
+						</div>
+						<!-- 产品操作区 -->
+						<div class="dia-item-opts clearfix">
+							<div class="dia-item-price">&yen; 1099.00</div>
+							<div class="dia-item-report">
+								<a href="#"><i></i>查看证书</a>
+							</div>
+							<div class="dia-item-cart">
+								<a href="#"><i></i>购买</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	function showSelect() {
+		$('.dia-select-container').toggle();
+		$('.dia-pro-container').toggle();
+		$('.dia-arrow').toggleClass('active');
+		$('.am-active').toggleClass('am-active');
+		$('#dia-form').trigger('reset');
+	}
+
+	function reset() {
+		$('.am-active').toggleClass('am-active');
+		$('.dia-arrow').toggleClass('active');
+		$('#dia-form').trigger('reset');
+	}
+</script>

@@ -1,0 +1,83 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	background: url(../img/reg/reg-bg.jpg) no-repeat;
+}
+.reg-form {
+	width: 75%;
+	margin: 60px auto 0;
+}
+.reg-box {
+	padding: 15px 0 15px 12px;
+	border-bottom: 1px solid #ccc;
+}
+.reg-icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+input {
+	border: 0;
+	outline: medium;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: none;
+}
+input[type=text]{
+	width: 80%;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 16px;
+	font-size: 14px !important;
+	color: #b7b7b7;
+}
+.reg-date {
+	display: inline-block;
+	position: relative;
+	width: 80%;
+	height: 20px;
+}
+input[type=date]{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	opacity: 0;
+}
+.reg-box input[type=text] {
+	margin-top: 2px;
+}
+#showdate {
+	display: inline-block;
+	position: absolute;
+	bottom: -8px;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #b7b7b7;
+	text-indent: 16px;
+	vertical-align: bottom;
+}
+.yzm-btn {
+	position: absolute;
+	right: 0;
+	padding: 0 5px;
+	line-height: 21px;
+	color: #888;
+	border: 1px solid #ccc;
+}
+input[type=submit]{
+	width: 100%;
+	margin: 60px auto 0;
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background-color: #d45a72;
+}

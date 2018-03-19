@@ -1,0 +1,109 @@
+.newadd-container {
+	width: 100%;
+	padding: 15px;
+	border-bottom: 1px solid #e4e4e4;
+}
+.newadd-bd {
+	margin-left: 35px;
+}
+.newadd-hd {
+	color: #888;
+}
+input {
+	width: 80%;
+	border: 0;
+	outline: medium;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	text-indent: 16px;
+	color: #555;
+}
+
+input[type=submit]{
+	display: block;
+	width: 75%;
+	margin: 60px auto 0;
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background-color: #d45a72;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	-webkit-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	-moz-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	text-indent: 0;
+}
+
+.newadd-bd.adpre {
+	position: relative;
+	width: 120px;
+	max-width: 80%;
+	height: 20px;
+}
+.adpre select {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	border: 0;
+	background: transparent;
+	box-shadow: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: medium;
+	opacity: 0;
+}
+.skin-l {
+	position: absolute;
+	top: -3px;
+	left: 16px;
+	display: inline-block;
+	width: calc(100% - 26px);
+	height: 26px;
+	line-height: 26px;
+	background: #fff;
+	border-top-left-radius: 999px;
+	border-bottom-left-radius: 999px;
+	text-indent: 10px;
+	color: #555;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	-moz-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+}
+.skin-r {
+	position: absolute;
+	top: -3px;
+	right: 0;
+	width: 26px;
+	height: 26px;
+	background: #d45a72 url(../img/btn/btn_arrow_right.png) no-repeat;
+	background-position: center center;
+	border-top-right-radius: 999px;
+	border-bottom-right-radius: 999px;
+	-webkit-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	-moz-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+}
+.am-form-error .am-form-field:focus, .am-field-error:focus,.am-form-error .am-form-field, .am-field-error,.am-form-success .am-form-field, .am-field-valid {
+	background: transparent !important;
+	border-color: transparent !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}

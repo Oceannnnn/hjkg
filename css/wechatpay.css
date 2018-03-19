@@ -1,0 +1,27 @@
+.item-list {
+	border-bottom: 1px solid #e4e4e4;
+	color: #888;
+}
+.item-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.item-list ul li {
+	margin: 15px 0;
+	padding: 0 15px;
+}
+.item-list-right {
+	margin-left: 65px;
+	text-align: right;
+	color: #555;
+}
+.wetchatpay-btn {
+	width: 75%;
+	margin: 60px auto 0;
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background-color: #d45a72;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<meta name="format-detection" content="telephone=no" />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel="stylesheet" href="lib/amazeui/css/amazeui.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<style type="text/css">
+			.tui-input {
+				width: 100%;
+				padding: 15px;
+				border-bottom: 1px solid #e4e4e4
+			}
+			
+			.tui-input .fl {
+				color: #888;
+			}
+			
+			.tui-input input {
+				width: 50%;
+				border: 0;
+				outline: medium;
+				-webkit-box-shadow: none;
+				-moz-box-shadow: none;
+				box-shadow: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				background: transparent;
+				text-indent: 16px;
+				color: #555;
+			}
+			
+			.tui-select select {
+				position: absolute;
+				display: inline-block;
+				width: 100%;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 10;
+				border: 0;
+				background: transparent;
+				box-shadow: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				outline: medium;
+				opacity: 0;
+			}
+			
+			textarea {
+				width: 80%;
+				resize: none;
+				padding: 0;
+				border: none;
+				background: transparent;
+				box-shadow: none;
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				outline: medium;
+				padding-left: 16px;
+			}
+			input[type=submit]{
+				display: block;
+			    width: 75%;
+			    margin: 60px auto 0;
+			    padding: 15px 0;
+			    text-align: center;
+			    color: #fff;
+			    font-size: 14px;
+			    background-color: #d45a72;
+			    -webkit-border-radius: 999px;
+			    -moz-border-radius: 999px;
+			    border-radius: 999px;
+			    border: 0;
+			    -webkit-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+			    -moz-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+			    box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+			    text-indent: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					退款/退货
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<div class="nav-bottom-bar fixbar clearfix">
+			<nav class="clearfix">
+				<a href="index.html"><span><img src="img/nav/icon_home.png" /><span>主页</span></span></a>
+				<a href="分类.html"><span><img src="img/nav/icon_class.png" /><span>分类</span></span></a>
+				<a href="cart.html"><span><img src="img/nav/icon_cart.png" /><span>购物车</span></span></a>
+				<a href="my.html"><span><img src="img/nav/icon_me.png" /><span>我的</span></span></a>
+			</nav>
+		</div>
+		<div class="scroll-wrap">
+			<form data-am-validator>
+				<div class="tui-input">
+					<div class="fl">申请单号:</div>
+					<input type="text" value="12345678" readonly disabled/>
+				</div>
+				<div class="tui-input">
+					<div class="fl">退款/退货:</div>
+					<div class="fl tui-select" style="position: relative;width: 120px;max-width: 80%;height: 20px;">
+						<select name="" required>
+							<option value="0">退款</option>
+							<option value="1">退货</option>
+						</select>
+						<div class="skin-l"></div>
+						<div class="skin-r"></div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="tui-input">
+					<div class="fl">退款金额:</div>
+					<input type="text" placeholder="本单最多可退99元"/>
+				</div>
+				<div class="tui-input">
+					<div class="fl">退款原因:</div>
+					<textarea name="" rows="3" cols="" placeholder="请输入申请退款/退货的原因"></textarea>
+				</div>
+				
+				<input type="submit" value="确认"/>
+			</form>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	$(".skin-l").text($("select option:eq(0)").text());
+	$("select").change(function() {
+		var selected = $(this).find("option:selected").text();
+		$(".skin-l").text(selected);
+	});
+</script>

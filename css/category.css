@@ -1,0 +1,25 @@
+/* 头部按钮 */
+.category-btn.title {
+	font: normal 12px/45px arial;
+	color: #a5a5a5;
+}
+.category-btn span {
+	padding: 4px;
+	color: #d45a72;
+	border: 1px solid #d45a72;
+}
+.category-btn span.current {
+	color: #fff;
+	background-color: #d45a72;
+}
+.categories-item a {
+	display: block;
+	border-bottom: 1px solid #f9f5f4;
+	border-right: 1px solid #f9f5f4;
+}
+.categories-item.fr a {
+	border-right: none;
+}
+.categories-item img {
+	width: 99.9%;
+}

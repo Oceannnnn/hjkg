@@ -1,0 +1,214 @@
+.wetchat-info {
+	padding: 15px;
+	height: 100px;
+	background: url(../img/my/mybg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.my-avatar {
+	width: 70px;
+	height: 70px;
+}
+
+.my-avatar img {
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+}
+
+.my-right {
+	margin-left: 86px;
+	height: 100%;
+	padding-top: 15px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.my-jifen {
+	margin-right: 10px;
+}
+
+.my-info ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.my-info ul li {
+	padding: 15px;
+	line-height: 22px;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.my-info ul li a:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.my-info ul li a {
+	color: #555;
+}
+
+.my-icon {
+	margin-right: 16px;
+}
+
+.my-icon img {
+	width: 20px;
+}
+
+.my-info ul li .fr img {
+	width: 6px;
+}
+
+.my-banner-container {
+	position: relative;
+}
+
+.my-banner-bg {
+	min-height: 200px;
+}
+
+.my-banner-container p {
+	margin: 0;
+}
+
+.my-banner-avatar {
+	position: absolute;
+	width: 100%;
+	top: 15px;
+	text-align: center;
+}
+
+.my-banner-avatar img {
+	max-width: 100px;
+	border-radius: 100%;
+	border: 3px solid #f9f6f5;
+}
+
+.my-banner-avatar p {
+	margin-top: 5px;
+	font-size: 1.5rem;
+}
+
+.my-banner-flex {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	border-bottom: 1px solid #dadada;
+}
+
+.my-banner-item {
+	-webkit-box-flex: 1;
+	flex: 1;
+	width: 50%;
+	height: 49px;
+	text-align: center;
+	background-color: rgba(251, 251, 251, 0.4);
+}
+
+.my-banner-item:first-child {
+	border-right: 1px solid #c2b7cb;
+}
+
+.my-banner-item:last-child {
+	border-left: 1px solid #c2b7cb;
+}
+
+.my-banner-item p {
+	line-height: 20px;
+}
+
+.my-banner-item p:first-child {
+	margin-top: 8px;
+}
+
+.my-banner-item p:last-child {
+	margin-top: -3px;
+}
+
+.my-order-title,
+.my-order-flex {
+	border-bottom: 1px solid #ccc;
+}
+
+.my-order-title {
+	padding: 15px 15px 10px;
+	font-size: 14px;
+	color: #555;
+}
+
+.my-order-flex {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	padding: 10px;
+}
+
+.my-order-title a.fr {
+	padding-right: 15px;
+	font-size: 10px;
+	line-height: 20px;
+	color: #888;
+	background: url(../img/btn/arrow-right.png) no-repeat right center;
+	background-size: 8px;
+}
+
+.my-order-entry,
+.my-order-other {
+	margin-top: 10px;
+	background: #fcfbfb;
+}
+
+.my-order-item {
+	-webkit-box-flex: 1;
+	flex: 1;
+	width: 50%;
+	text-align: center;
+}
+
+.my-order-item a {
+	color: #555;
+	text-align: center;
+}
+
+.my-order-item img {
+	display: block;
+	margin: 0 auto 2px;
+	width: 22px;
+}
+
+.moo-container {
+	padding: 2px 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.moo-container a {
+	display: block;
+	color: #555;
+	line-height: 35px;
+	background: url(../img/btn/arrow-right.png) no-repeat right center;
+	background-size: 8px;
+}
+
+.moo-container a span {
+	float: right;
+	margin-right: 15px;
+	font-size: 10px;
+	color: #888;
+	max-width: 50%;
+	white-space: nowrap;
+	overflow: hidden;
+}

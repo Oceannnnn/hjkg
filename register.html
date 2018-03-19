@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel="stylesheet" href="lib/amazeui/css/amazeui.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					注册
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		<div class="scroll-wrap">
+			<div class="reg-form">
+				<form>
+					<div class="reg-box">
+						<span class="reg-icon"><img src="img/reg/phone.png"/></span>
+						<input type="text" placeholder="手机" />
+					</div>
+					<div class="reg-box">
+						<span class="reg-icon"><img src="img/reg/name.png"/></span>
+						<input type="text" placeholder="姓名" />
+					</div>
+					<div class="reg-box" style="padding: 7px 0 15px 12px;">
+						<span class="reg-icon"><img src="img/reg/birthday.png"/></span>
+						<span class="reg-date">
+							<span id="showdate">生日</span>
+							<input type="date" onchange="date()" />
+						</span>
+					</div>
+					<div class="reg-box" style="position: relative;">
+						<span class="reg-icon"><img src="img/reg/yzm.png"/></span>
+						<input type="text" placeholder="验证码" />
+						<span class="yzm-btn">获取验证码</span>
+					</div>
+					<input type="submit" class="am-round" value="注册" />
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	function date(){
+		var date = $("input[type=date]").val();
+		$("#showdate").text(date);
+	}
+</script>

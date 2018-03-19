@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+		<meta name="format-detection" content="telephone=no" />
+		<title>弘基商城 - 做价值永恒的时尚奢侈品引导者</title>
+		<link rel='stylesheet' href='http://cdn.amazeui.org/amazeui/2.5.2/css/amazeui.css' />
+		<link rel='stylesheet' type='text/css' href='css/common.css' />
+		<link rel='stylesheet' type='text/css' href='css/cart.css' />
+	</head>
+	<body>
+		<header>
+			<div class="headerbox">
+				<div class="category-btn title">
+					购物车
+				</div>
+				<div class="btn-topbar-left">
+					<a href="javascript:history.go(-1);" class="db"><img src="img/btn/back.png" /></a>
+				</div>
+				<div class="btn-topbar-right head-more">
+					<a href="javascript:;" class="db"><img src="img/btn/more.png" /></a>
+				</div>
+			</div>
+		</header>
+		
+		<div class="fixbar totalbar clearfix">
+			<div class="select-all fl">
+				<label for="selectAll">
+					<input type="checkbox" id="selectAll" />
+				</label>
+			</div>
+			<div class="remove fl">
+				<a href="javascript:;" onclick="alert('remove')"><img src="img/btn/remove.png"/></a>
+			</div>
+			<div class="gotobill fr">
+				<a href="javascript:;">结算</a>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="nav-bottom-bar nav-bar2 fixbar clearfix">
+			<nav class="clearfix">
+				<a href="index.html"><span><img src="img/nav/icon_home_0.png" /><span>主页</span></span></a>
+				<a href="分类.html"><span><img src="img/nav/icon_class.png" /><span>分类</span></span></a>
+				<a href="cart.html"><span><img src="img/nav/icon_cart.png" /><span>购物车</span></span></a>
+				<a href="my.html"><span><img src="img/nav/icon_me.png" /><span>我的</span></span></a>
+			</nav>
+		</div>
+		<div class="scroll-wrap">
+			<!-- 商品 -->
+			<div class="mycart-list">
+				<div class="list-empty">
+					<p>购物车空空如也！</p>
+					<a href="index.html">去逛逛</a>
+				</div>
+				<ul>
+					<li>
+						<div class="cart-checkbox">
+							<label for="check1"><input type="checkbox" id="check1" /></label>
+						</div>
+						<div class="cart-img fl">
+							<img src="http://fakeimg.pl/100x100/?text=product&font=lobster"/>
+						</div>
+						<div class="cart-proinfo">
+							<div class="cart-proname"><a href="#" onclick="alert('点击了链接')">这里描述产品的名字，Cipullo，kcj珠宝首饰吊坠300黄金和金</a></div>
+							<div class="cart-size"  onclick="showMask()">40kg 18kqqqqq</div>
+							<div class="cart-param">
+								<div class="pro-price fl">&yen;1999.00</div>
+								<div class="shop-number fr">&times;1</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="cart-checkbox">
+							<label for="check1"><input type="checkbox" id="check1" /></label>
+						</div>
+						<div class="cart-img fl">
+							<img src="http://fakeimg.pl/100x100/?text=product&font=lobster"/>
+						</div>
+						<div class="cart-proinfo">
+							<div class="cart-proname"><a href="#" onclick="alert('点击了链接')">这里描述产品的名字，CipulloCipulloCipulloCipulloCipulloCipulloCipulloCipullo，kcj珠宝首饰吊坠300黄金和金kcj珠宝首饰吊坠300黄金和金kcj珠宝首饰吊坠300黄金和金</a></div>
+							<div class="cart-size"  onclick="showMask()"></div>
+							<div class="cart-param">
+								<div class="pro-price fl">&yen;1999.00</div>
+								<div class="shop-number fr">&times;1</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="total-price">
+				总计：<span>&yen;3999.00</span>
+		</div>
+		<!-- 悬浮按钮 -->
+		<div class='fix-btn'>
+			<div class='go-to-top fr hide' id='gotop'>
+				<img src='img/btn/go-to-top.png'/>
+			</div>
+		</div>
+		
+		<!-- 侧边栏 -->
+		<div class="rightcanvas-cover"></div>
+		<div class="rightcanvas-content">
+			<div class="rightcanvas-summary">
+				<div class="img"><img src="https://img.alicdn.com/bao/uploaded/i4/1652742042/TB2LoYKkXXXXXbaXpXXXXXXXXXX_!!1652742042.jpg_100x100.jpg" /></div>
+				<div class="main">
+					<div class="price">&yen;1999.00</div>
+					<!--<div class="select">
+							已选择<span class="sv">红色</span>
+							<span>10G</span>
+						</div>-->
+				</div>
+				<div class="close" onclick="hideMask()">&times;</div>
+			</div>
+			<div class="rightcanvas-body">
+				<div id="scroller">
+					<div class="rc-sk">
+						<ul>
+							<li>
+								<h2>尺寸：</h2>
+								<div class="items">
+									<span>S</span>
+									<span>M</span>
+									<span>L</span>
+									<span>XL</span>
+								</div>
+							</li>
+							<li>
+								<h2>颜色：</h2>
+								<div class="items">
+									<span>红</span>
+									<span>绿2</span>
+									<span>蓝</span>
+									<span>黑</span>
+									<span>红</span>
+									<span>绿</span>
+								</div>
+							</li>
+							<li>
+								<h2>颜色：</h2>
+								<div class="items">
+									<span>红</span>
+									<span>绿2</span>
+									<span>蓝</span>
+									<span>黑</span>
+									<span>红</span>
+									<span>绿</span>
+								</div>
+							</li>
+							<li>
+								<h2>颜色：</h2>
+								<div class="items">
+									<span>红</span>
+									<span>绿2</span>
+									<span>蓝</span>
+									<span>黑</span>
+									<span>红</span>
+									<span>绿</span>
+								</div>
+							</li>
+							<li>
+								<h2>颜色：</h2>
+								<div class="items">
+									<span>红</span>
+									<span>绿2</span>
+									<span>蓝</span>
+									<span>黑</span>
+									<span>红</span>
+									<span>绿</span>
+								</div>
+							</li>
+							<li>
+								<h2>颜色：</h2>
+								<div class="items">
+									<span>红</span>
+									<span>绿2</span>
+									<span>蓝</span>
+									<span>黑</span>
+									<span>红</span>
+									<span>绿</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="rc-number">
+						<h2>数量：</h2>
+						<div class="number-control">
+							<div class="nc-wrapper">
+								<button type="button" class="decrease">-</button>
+								<input type="number" class="num" value="1" name="quantity">
+								<button type="button" class="increase">+</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightcanvas-addtocart" onclick="cofirmbtnhideMask()">确定</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="lib/amazeui/js/jquery.min.js"></script>
+<script type="text/javascript" src="lib/amazeui/js/amazeui.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	//label样式
+	$("input[type=checkbox]").on("click",function(){
+		if(this.checked){
+			$(this).parent("label").addClass("l-on");
+		}else {
+			$(this).parent("label").removeClass("l-on");
+		}
+	})
+	//全选 反选
+	$(".fixbar input[type=checkbox]").on("click",function(){
+		if (this.checked) {
+			$('input:checkbox').prop('checked', true);
+			$("label").addClass("l-on");
+		} else {
+			$('input:checkbox').prop('checked', false);
+			$("label").removeClass("l-on");
+		}
+	});
+	//商品
+	$(".mycart-list input[type=checkbox]").on("click",function(){
+		var _total = $(".mycart-list input:checkbox").length;
+		var _check = $(".mycart-list input:checkbox:checked").length;
+		if(_total == _check){
+			$(".fixbar input[type=checkbox]").prop('checked', true);
+			$(".fixbar label").addClass("l-on");
+			
+		}else {
+			$(".fixbar input[type=checkbox]").prop('checked', false);
+			$(".fixbar label").removeClass("l-on");
+		}
+	});
+	//显示选择
+	function showMask(){
+		$('html body').css("overflow","hidden");
+		$(".rightcanvas-cover").show();
+		$(".rightcanvas-content").css("top","20%");
+	}
+	//右边关闭选择
+	function hideMask(){
+		$('html body').css("overflow","auto");
+		$(".rightcanvas-cover").hide();
+		$(".rightcanvas-content").css("top","120%");
+	}
+	//确定选择
+	function cofirmbtnhideMask(){
+		//先判断是否选完
+		var str = "";
+		if(($(".rc-sk ul li").length)>$(".check").length){
+				alert("请完成剩余选择！");
+		}else {
+			for(i=0;i<($(".rc-sk ul li").length);i++){
+			str = str +$(".rc-sk ul li")[i].querySelector("h2").innerText + $(".check")[i].innerText + "   ";
+		}
+			//打印到页面上
+			$(".pro-property .pro-property-value").text(str);
+			var num = $("[name=quantity]").val();
+			hideMask();
+		}
+		
+	}
+	//选择操作添加 .check 的class
+	$(".rc-sk ul li span").on("click",function(){
+		if($(this).hasClass("check")){
+			$(this).removeClass("check");
+		}else {
+			$(this).addClass("check").siblings().removeClass("check");
+		}
+	});
+</script>

@@ -1,0 +1,197 @@
+.btn-topbar-edit {
+	position: absolute;
+    width: 35px;
+    height: 40px;
+    line-height: 45px;
+    text-align: center;
+    top: 5px;
+    right: 50px;
+}
+
+.quan-tabs ul,.quan-content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.quan-tabs ul {
+	border-bottom: 1px solid #e4e4e4;
+}
+.quan-tabs ul li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+.quan-tabs2 ul li {
+	width: 50%;
+}
+.quan-tabs ul li a {
+	display: block;
+	padding: 10px 0 8px;
+	margin-bottom: -1px;
+	text-align: center;
+	color: #555;
+	border-bottom: 2px solid transparent;
+}
+.quan-tabs ul li.active a {
+	color: #d45a72;
+	border-bottom: 2px solid #d45a72;
+}
+.quan-content ul li {
+	position: relative;
+	margin: 15px;
+	padding: 15px;
+	border: 1px solid #cab8ad;
+	background: #fff url(../img/quan_use.png);
+	background-size: 100% 10px;
+	background-repeat: repeat-x;
+}
+.quan-content:nth-of-type(n+2) ul li{
+	position: relative;
+	border: 1px solid #e4e4e4;
+	background: #fff url(../img/quan.png);
+	background-size: 100% 10px;
+	background-repeat: repeat-x;
+}
+.quan-content .fl {
+	text-align: left;
+	margin-top: 16px;
+	color: #d45a72;
+	height: 50px;
+}
+.quan-content:nth-of-type(n+2) ul li .fl {
+	color: #e4e4e4;
+}
+.quan-inputbox{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 20px;
+	height: 20px;
+}
+.quan-inputbox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: url(../img/btn/uncheck.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.quan-inputbox input {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+.quan-inputbox input[type=checkbox]:checked+label {
+	background: url(../img/btn/check.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.quan-content .fr {
+	text-align: right;
+}
+.quan-yen {
+	font-size: 18px;
+}
+.quan-price {
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 50px;
+}
+.quan-limit {
+	font-size: 14px;
+	color: #555;
+	margin-top: 16px;
+	margin-bottom: 8px;
+}
+.quan-time {
+	font-size: 12px;
+	color: #888;
+}
+
+.quan-input {
+	padding: 15px 15px 10px;
+	border-bottom: 1px solid #ccc;
+}
+.quan-input input.fl {
+	margin: 5px 0 0;
+	width: 60%;
+	height: 25px;
+	font-size: 12px;
+	color: #888;
+	line-height: 25px;
+	border: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: medium;
+	background: transparent;
+}
+.quan-input button {
+	margin: 5px 0 ;
+	background: #d45a72;
+	font-size: 14px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	border: none;
+	outline: medium;
+	padding: 0 20px;
+}
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 50px;
+	z-index: 999;
+	width: 100%;
+	height: 40px;
+	background-color: #f9f5f4;
+	border-top: 1px solid #ccc;
+}
+.footer-inputbox {
+	position: relative;
+	width: 100px;
+	height: 100%;
+}
+.footer-inputbox input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	opacity: 0;
+}
+.footer-inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: normal;
+	background: url(../img/btn/uncheck.png) no-repeat;
+	background-position: 15px center;
+	background-size: 20px 20px;
+	text-indent: 40px;
+}
+.footer-inputbox input[type=checkbox]:checked+label {
+	background: url(../img/btn/check.png) no-repeat;
+	background-position: 15px center;
+	background-size: 20px 20px;
+}
+.footer .delbtn {
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	margin-top: -1px;
+	color: #fff;
+	background: #d45a72;
+}

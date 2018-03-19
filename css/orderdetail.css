@@ -1,0 +1,99 @@
+.item-list {
+	border-bottom: 1px solid #e4e4e4;
+	color: #888;
+}
+.item-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.item-list ul li {
+	margin: 15px 0;
+	padding: 0 15px;
+}
+.item-list-right {
+	margin-left: 65px;
+	text-align: right;
+	color: #555;
+}
+.wetchatpay-btn {
+	width: 75%;
+	margin: 60px auto 0;
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	background-color: #d45a72;
+}
+.order-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.order-list ul li {
+	margin: 15px auto 0;
+	padding: 15px;
+	background: #f2eeed;
+}
+.pro-img img {
+	width: 70px;
+	height: 70px;
+}
+.pro-info {
+	margin-left: 86px;
+}
+.pro-info:after {
+	content: " ";
+	clear: both;
+}
+.pro-size {
+	line-height: 19px;
+	color: #888;
+}
+.pro-param {
+	color: #d45a72;
+}
+.pro-name {
+	color: #555;
+	height: 38px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+}
+.pro-name a {
+	color: #555;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+}
+.order-opts {
+	background: #f9f5f4;
+	text-align: right;
+	padding: 20px 15px;
+}
+.gocomment {
+	display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+	border: 1px solid #d45a72;
+	color: #fff;
+	background: #d45a72;
+}
+.shouhou {
+	display: inline-block;
+    width: 80px;
+    margin-left: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #d45a72;
+	color: #888;
+	background: transparent;
+}

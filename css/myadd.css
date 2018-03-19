@@ -1,0 +1,68 @@
+.address-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.address-list ul li:first-child {
+	margin-top: 16px;
+}
+.address-detail {
+	padding: 15px;
+	background: #f2eeed;
+}
+.add-name {
+	width: 25%;
+	color: #555;
+}
+.add-phone {
+	width: 45%;
+	color: #555;
+}
+.add-status,.add-status-default {
+	width: 30%;
+	color: #888;
+	text-align: right;
+}
+.add-status-default {
+	color: #d45a72;
+}
+.add-info {
+	margin-top: 30px;
+}
+.address-opts {
+	background: #f9f5f4;
+	text-align: right;
+	padding: 20px 15px;
+}
+.edit-btn,.remove-btn {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border: 1px solid #d45a72;
+	color: #fff;
+	background: #d45a72;
+}
+.remove-btn {
+	border: 1px solid #d45a72;
+	margin-left: 15px;
+	color: #888;
+	background: transparent;
+}
+.newaddress-btn {
+	width: 75%;
+	margin: 60px auto 0;
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	background-color: #d45a72;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+	-webkit-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	-moz-box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	box-shadow: 1px 1px 1px rgba(1,0,0,.15);
+	text-indent: 0;
+}

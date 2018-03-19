@@ -1,0 +1,48 @@
+.myfavour-list ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.myfavour-list ul li {
+	padding: 15px;
+	margin-top: 16px;
+	background-color: #f2eeed;
+	clear: both;
+}
+.pro-img img {
+	width: 70px;
+	height: 70px;
+}
+.pro-info {
+	margin-left: 86px;
+}
+.pro-info:after {
+	content: " ";
+	clear: both;
+}
+.pro-param {
+	margin-top: 11px;
+	color: #d45a72;
+}
+.pro-name {
+	color: #555;
+	height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+}
+.pro-name a {
+	color: #555;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	word-break: break-all;
+}
+.likemark img {
+	width: 13px;
+	margin-right: 5px;
+	margin-top: -4px;
+}

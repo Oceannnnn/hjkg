@@ -1,0 +1,22 @@
+图片懒加载方法说明：
+
+1.引入js
+<script type="text/javascript" src="lib/amazeui/js/amazeui.lazyload.js"></script>
+
+2.需要懒加载的图片标签修改
+原代码 <img src="url" >
+修改为 <img class="lazy" data-original="url" >
+
+3.js调用（已添加js代码）
+$("img.lazy").lazyload();
+
+方俊你需要做的：
+1.引入js （等一张默认的图片再进行修改js）
+2.修改需要添加懒加载的图片
+
+建议添加的页面（主要是有产品的页面）
+1.主页 index.html 下面的产品列表（轮播图和分类图不要操作）
+2.分类2 category2.html 列表里面的产品列表(品牌分类的图片不要做懒加载处理，重要！)
+3.产品列表 list.html
+4.订单 allorder.html
+5.品牌专卖 brandseries.html

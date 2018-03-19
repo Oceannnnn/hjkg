@@ -1,0 +1,26 @@
+
+allorder  订单
+brandseries  品牌专场
+cart 购物车
+category 分类
+category2 分类版本2
+comment 评价
+index 首页
+list 产品列表（带菜单）
+my 我的页面
+myadd 我的地址（管理）
+myfavour 喜欢
+myinfo 个人信息
+newadd 新建地址
+orderdetail 订单详情
+productdetail 产品详情
+register 注册 
+wechatpay 微信支付
+writeorder 填写订单
+
+=========
+customized-entry 定制入口
+customized-order 字母链定制
+customized-order 定制订单
+store 门店地址
+customized-diamond 裸钻定制
